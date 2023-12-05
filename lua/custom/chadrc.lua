@@ -10,6 +10,11 @@ M.ui = {
 
   hl_override = highlights.override,
   hl_add = highlights.add,
+
+  statusline = {
+    theme = "minimal", -- default/vscode/vscode_colored/minimal
+    separator_style = "round",
+  },
 }
 
 M.plugins = "custom.plugins"
