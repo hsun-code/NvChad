@@ -5,9 +5,9 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
   },
-  v = {
-    [">"] = { ">gv", "indent"},
-  },
+  -- v = {
+  --   [">"] = { ">gv", "indent"},
+  -- },
 }
 
 -- more keybinds!
