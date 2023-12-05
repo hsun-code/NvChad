@@ -9,11 +9,13 @@ M.override = {
   Comment = {
     italic = true,
   },
+  CursorLineNr = { fg = "red" },
 }
 
 ---@type HLTable
 M.add = {
   NvimTreeOpenedFolderName = { fg = "green", bold = true },
+  CursorLine = { underline = true },
 }
 
 return M
