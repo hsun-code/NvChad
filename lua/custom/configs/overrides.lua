@@ -50,10 +50,33 @@ M.treesitter = {
 }
 
 M.mason = {
+  -- lsp server: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+  -- null-ls linter and format tool
+  -- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
+  --
   ensure_installed = {
+    -- bash stuff
+    "bash-language-server",
+    "shfmt",
+    -- "shellcheck", -- TODO: linter tools
+
+    -- c/cpp stuff
+    -- clangd is not supported for aarch64. We use ccls instead.
+    -- ccls is not supported by mason. We install it manually.
+    -- "clangd",
+    "clang-format", -- c, cpp, java
+
     -- lua stuff
     "lua-language-server",
     "stylua",
+
+    -- markdown
+    "marksman",
+    -- "textlint",
+
+    -- python
+    "pyright",
+    "yapf",
 
     -- web dev stuff
     -- "css-lsp",
@@ -62,13 +85,8 @@ M.mason = {
     -- "deno",
     -- "prettier",
 
-    -- c/cpp stuff
-    -- clangd is not supported for aarch64 backend. we install ccls manually.
-    -- "clangd",
-    -- "clang-format",
-
     -- java stuff
-    "java-language-server",
+    -- "java-language-server",
   },
 }
 
