@@ -20,7 +20,7 @@ local sources = {
   formatting.stylua,
 
   -- markdown
-  lint.textlint,
+  -- lint.textlint,
 
   -- python
   formatting.yapf,
