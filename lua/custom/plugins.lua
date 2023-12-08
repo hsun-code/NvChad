@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -44,6 +44,19 @@ local plugins = {
     event = "InsertEnter",
     config = function()
       require("better_escape").setup()
+    end,
+  },
+
+  {
+    -- TODO: use ellisonleao/glow.nvim
+    "hsun-code/glow.nvim",
+    branch = "fix-filename-pattern",
+    cmd = "Glow",
+    config = function()
+      require("glow").setup({
+        width = 120,
+        height = 160,
+      })
     end,
   },
 
