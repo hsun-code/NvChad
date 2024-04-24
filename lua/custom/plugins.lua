@@ -48,9 +48,8 @@ local plugins = {
   },
 
   {
-    -- TODO: use ellisonleao/glow.nvim
-    "hsun-code/glow.nvim",
-    branch = "fix-filename-pattern",
+    "ellisonleao/glow.nvim",
+    branch = "main",
     cmd = "Glow",
     config = function()
       require("glow").setup({
